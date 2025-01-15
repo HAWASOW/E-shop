@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'roboto condensed' , sans-serif;
+}
+body{
+    height: 100%;
+}
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: black;
+}
+.navbar .logo h1{
+    color: white;
+    cursor: pointer;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+  }  
+  .navbar .menu li.active{
+    border-bottom: 4px solid #f63e4e;
+  }
+  .navbar.menu li .a:hover{
+    border-bottom: 4px solid #f63e4e ;
+  }
+  .content{
+    background-image:url(Bg_banner.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 100vh;
+
+  }.content h1{
+    font-size: 40px;
+  }
+  .content p{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #f63e4e;
+    color: white;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  .produit_texte{
+    text-align: left;
+    font-size: 30;
+    font-weight: 300;
+    margin-top: 30;
+    margin-left: 80px;
+    color: #242424;
+  }
+  .sectuon_produit{
+    padding: 30px 5%;
+  }
+  .produit{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .produit .carte{
+    width: 310px;
+    background: #f5f5f5;
+    box-shadow: 5 15px 25px rgba(red, green, blue, alpha);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .produit .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10P;
+  }
+  .produit .carte .desct{
+    padding: 5px 20px;
+    opacity: 0.8;
+  }
+  .produit.carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+  }
+  .produit .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .produit .carte .prix{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .produit .carte .achat{
+    font-size: 13px;
+    font-weight: 900;
+    color: #f63e4e;
+    padding: 15px 20px;
+    border-radius: 5px
+  }
+  .produit .carte .box .achat:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+  }
+  footer{
+    background: #f3f4f6;
+    height: 10vh;
+  }
+  footer P{
+    text-align: center;
+    line-height: 10vh;
+  }
+  footer p a{
+    text-decoration: none;
+    color: #f63e4e;
+    font-weight: bold;
+  }
+
